@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@200&family=Montserrat:wght@400;500&family=Poppins:wght@500&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    text-align: center;
+}
+hr{
+    width: 50%;
+    margin: auto;
+}
+#board{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(48, 227, 233);
+    border: 6px solid rgb(24, 144, 148);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tile{
+    width: 140px;
+    height: 140px;
+    border: 5px solid rgb(24, 144, 148);
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* colors of tiles */
+
+.x2{
+    background-color: rgb(5, 240, 204);
+    color: #fff;
+}
+.x4{
+    background-color: rgb(4, 167, 142);
+    color: #fff;
+}
+.x8{
+    background-color: rgb(6, 156, 19);
+    color: #fff;
+}
+.x16{
+    background-color: rgb(17, 194, 32);
+    color: #fff;
+}
+.x32{
+    background-color: rgb(17, 94, 194);
+    color: #fff;
+}
+.x64{
+    background-color: rgb(12, 65, 134);
+    color: #fff;
+}
+.x128{
+    background-color: rgb(124, 13, 134);
+    color: #fff;
+}
+.x256{
+    background-color: rgb(179, 17, 194);
+    color: #fff;
+}
+.x512{
+    background-color: rgb(209, 15, 226);
+    color: #fff;
+}
+.x1024{
+    background-color: rgb(236, 29, 255);
+    color: #fff;
+}
+.x2048{
+    background-color: rgb(187, 9, 24);
+    color: #fff;
+}
+.x4096{
+    background-color: #ff2020;
+    color: #fff;
+}
+.x8192{
+    background-color: #fe3d3d;
+    color: #fff;
+}
+button{
+    margin-top: 50px;
+    scale: 1.7;
+    background-color: rgb(24, 144, 148);
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding: 5px;
+    font-weight: bold;
+    transition: scale 0.6s;
+}
+button:hover{
+    scale: 1.9;
+    cursor: pointer;
+}
+@media only screen and (max-width: 430px){
+    h1{
+        margin-top: 70px;
+    }
+    hr{
+        width: 300px;
+        margin: auto;
+    }
+    #board{
+        scale: 1.2;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 14%;
+        transform: translateY(-50%);
+    }
+    .tile{
+        width: 65px;
+        height: 65px;
+        border: 5px solid rgb(24, 144, 148);
+    }
+    button{
+        position: absolute;
+        top: 75%;
+        left: 44%;
+    }
+    .x128{
+        font-size: 30px;
+    }
+    .x256{
+        font-size: 30px;
+    }
+    .x512{
+        font-size: 30px;
+    }
+    .x1024{
+        font-size: 25px;
+    }
+    .x2048{
+        font-size: 23px;
+    }
+    .x4096{
+        font-size: 23px;
+    }
+    .x8192{
+        font-size: 23px;
+    }
+}@media only screen and (max-width: 390px){
+    hr{
+        width: 300px;
+        margin: auto;
+    }
+    #board{
+        scale: 1.1;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+    }
+    .tile{
+        width: 65px;
+        height: 65px;
+        border: 5px solid rgb(24, 144, 148);
+    }
+    button{
+        position: absolute;
+        top: 75%;
+        left: 43%;
+    }
+    .x128{
+        font-size: 30px;
+    }
+    .x256{
+        font-size: 30px;
+    }
+    .x512{
+        font-size: 30px;
+    }
+    .x1024{
+        font-size: 25px;
+    }
+    .x2048{
+        font-size: 23px;
+    }
+    .x4096{
+        font-size: 23px;
+    }
+    .x8192{
+        font-size: 23px;
+    }
+}
